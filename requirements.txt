@@ -1,3 +1,5 @@
+django
 webassets
 pyexecjs
 CoffeeScript
+jsmin
