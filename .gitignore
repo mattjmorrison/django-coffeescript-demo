@@ -1,0 +1,5 @@
+*.py[co]
+.webassets-cache/*
+*.swp
+.idea/*
+

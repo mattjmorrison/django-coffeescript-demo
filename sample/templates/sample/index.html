@@ -1,0 +1,17 @@
+{% load assets %}
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	<div id="hi">Hi</div>
+
+	{% assets filters="jsmin", output="packed.js", "sample/jquery-1.7.1.js" %}
+	    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+	{% endassets %}
+	{% assets filters="coffee", output="packed2.js", "sample/sample.coffee" %}
+	    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+	{% endassets %}
+
+</body>	
+</html>
